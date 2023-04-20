@@ -7,7 +7,9 @@ export default function Home() {
     return (
         <div>
             <div className='HeroVideo-Container'>
-                <video src={videoHero} preload="auto" autoPlay muted className='HeroVideo' onLoadStart={(e) => { e.target.playbackRate = 1.25; }} />
+                <div className='HeroVideo-Gradient'>
+                    <video src={videoHero} preload="auto" autoPlay muted loop className='HeroVideo' onLoadStart={(e) => { e.target.playbackRate = 1.25; }} />
+                </div>
             </div>
         </div >
     )
